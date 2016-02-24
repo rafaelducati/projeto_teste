@@ -1,0 +1,574 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*@import "compass/reset";*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/**
+ * Global Variables
+ */
+/**
+ * Structure
+ */
+/* line 13, ../sass-components/structure.scss */
+html, body, aside {
+  height: 100%;
+  font-family: "Lato", Arial;
+}
+
+/* line 15, ../sass-components/structure.scss */
+body {
+  background: #fafafa !important;
+}
+
+/* line 19, ../sass-components/structure.scss */
+a {
+  outline: none;
+}
+
+/* line 23, ../sass-components/structure.scss */
+.container-fluid {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+}
+
+/* line 29, ../sass-components/structure.scss */
+aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 65px;
+  width: 190px;
+  border-right: 1px solid #E8E2E2;
+  background: #1C496E;
+  z-index: 0;
+}
+
+/* line 40, ../sass-components/structure.scss */
+.list-group-item {
+  font-size: 10px;
+  text-transform: uppercase;
+  border: none;
+  background: #2C3E50;
+  padding-left: 32px;
+}
+/* line 48, ../sass-components/structure.scss */
+.list-group-item a:hover, .list-group-item a.active {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 57, ../sass-components/structure.scss */
+aside nav li {
+  float: left;
+  width: 100%;
+}
+/* line 61, ../sass-components/structure.scss */
+aside nav li a {
+  color: #CCC;
+  font-family: 'Lato', Arial;
+  padding: 10px 20px 7px 25px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  width: 100%;
+}
+/* line 69, ../sass-components/structure.scss */
+aside nav li a:hover, aside nav li a:focus, aside nav li a.active {
+  background: #1B3E5A;
+  color: #ccc;
+  box-shadow: inset 12px -5px 0 -6px #337AB7;
+  text-decoration: none;
+}
+/* line 78, ../sass-components/structure.scss */
+aside nav li a span {
+  margin-top: 1px;
+  padding-right: 10px;
+}
+/* line 86, ../sass-components/structure.scss */
+aside nav .subitens a {
+  color: #999;
+  font-family: 'Lato', Arial;
+  padding: 10px 0 7px 40px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  width: 100%;
+}
+/* line 94, ../sass-components/structure.scss */
+aside nav .subitens a:hover, aside nav .subitens a:focus, aside nav .subitens a.active {
+  /*background: #e9e9e9;*/
+  box-shadow: inset 12px -5px 0 -6px #A1B8CC;
+  text-decoration: none;
+}
+/* line 102, ../sass-components/structure.scss */
+aside nav .subitens a span {
+  margin-top: 1px;
+  padding-right: 10px;
+}
+
+/* line 110, ../sass-components/structure.scss */
+header {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px -1px #000;
+  z-index: 1;
+}
+/* line 116, ../sass-components/structure.scss */
+header .navbar-brand {
+  height: auto;
+  padding: 0;
+}
+/* line 121, ../sass-components/structure.scss */
+header .navbar-right {
+  margin-right: 0;
+}
+
+/* line 126, ../sass-components/structure.scss */
+.dashboard {
+  padding: 60px 0 0 200px;
+  width: 99.5%;
+}
+
+/* line 131, ../sass-components/structure.scss */
+.rulesInfo {
+  margin-bottom: 0;
+  border: 0;
+  background: #fff;
+  padding-right: 50px;
+}
+
+/* line 138, ../sass-components/structure.scss */
+.breadcrumb {
+  margin: -10px -22px 20px -25px;
+  padding: 30px;
+  background: #F3F3F3;
+  border-radius: 0;
+  border-bottom: 1px solid #E8E2E2;
+}
+
+/**
+ * Dashboard
+ */
+/* line 149, ../sass-components/structure.scss */
+.dash {
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* line 157, ../sass-components/structure.scss */
+.dash-icon {
+  font-size: 50px;
+  padding: 24px 23px 20px 20px;
+}
+
+/* line 162, ../sass-components/structure.scss */
+.dash-description {
+  margin-left: -4px;
+  width: 132px;
+  padding: 0 0 15px 20px;
+  box-sizing: border-box;
+}
+/* line 167, ../sass-components/structure.scss */
+.dash-description h1 {
+  margin: 25px 0 0 0;
+}
+/* line 170, ../sass-components/structure.scss */
+.dash-description p {
+  margin: 0 0 0 0;
+}
+
+/* line 175, ../sass-components/structure.scss */
+.dash-default {
+  background: #F3F3F3;
+}
+/* line 177, ../sass-components/structure.scss */
+.dash-default .dash-icon {
+  background: #999;
+}
+/* line 180, ../sass-components/structure.scss */
+.dash-default .dash-description {
+  color: #999;
+}
+
+/* line 185, ../sass-components/structure.scss */
+.dash-primary {
+  background: #5A99D0;
+}
+/* line 187, ../sass-components/structure.scss */
+.dash-primary .dash-icon {
+  background: #337ab7;
+}
+
+/* line 192, ../sass-components/structure.scss */
+.dash-secondary {
+  background: #019ABE;
+}
+/* line 194, ../sass-components/structure.scss */
+.dash-secondary .dash-icon {
+  background: #047792;
+}
+
+/* line 1, ../sass-components/helpers.scss */
+.remove-true {
+  text-decoration: line-through;
+  color: #990000;
+}
+
+/* line 7, ../sass-components/helpers.scss */
+.unstyled p {
+  margin: 0;
+}
+/* line 11, ../sass-components/helpers.scss */
+.unstyled.panel {
+  margin: 20px 0;
+}
+
+/* line 17, ../sass-components/helpers.scss */
+.panel-body .table {
+  margin-bottom: 0;
+}
+
+/* line 22, ../sass-components/helpers.scss */
+.ul-reset {
+  padding-left: 0px;
+  list-style: none;
+}
+
+/* line 27, ../sass-components/helpers.scss */
+.mbottom50 {
+  margin-bottom: 50px;
+}
+
+/* line 31, ../sass-components/helpers.scss */
+.mbottom0 {
+  margin-bottom: 0;
+}
+
+/* line 35, ../sass-components/helpers.scss */
+.mtop0 {
+  margin-top: 0;
+}
+
+/* line 39, ../sass-components/helpers.scss */
+.pRelative {
+  position: relative;
+}
+
+/* line 43, ../sass-components/helpers.scss */
+h3.advancedFilter {
+  margin-top: 8px;
+}
+
+/* line 47, ../sass-components/helpers.scss */
+.advancedFilter {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+/* line 52, ../sass-components/helpers.scss */
+.advancedFilter a {
+  margin-top: 5px;
+}
+/* line 56, ../sass-components/helpers.scss */
+.advancedFilter::after {
+  content: "";
+  width: 100%;
+  background: #e2e2e2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+}
+
+/* line 68, ../sass-components/helpers.scss */
+.panel-default > .panel-heading .badge {
+  background: #777;
+  font-weight: 300;
+}
+
+/* line 73, ../sass-components/helpers.scss */
+.tag-editor {
+  display: block;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0 9px;
+}
+/* line 81, ../sass-components/helpers.scss */
+.tag-editor .tag {
+  display: inline-block;
+  margin: 0 7px 0 0;
+  background-color: #666;
+  color: #fff;
+  padding: 1px 4px 3px 4px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+/* line 92, ../sass-components/helpers.scss */
+.tag-editor .tag-input {
+  display: inline-block;
+  width: auto;
+  height: 32px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+/* line 101, ../sass-components/helpers.scss */
+.tag-editor .tag-input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* line 108, ../sass-components/helpers.scss */
+.chosen-container {
+  width: 100% !important;
+}
+
+/* line 112, ../sass-components/helpers.scss */
+.addIP {
+  position: absolute;
+  right: 17px;
+  top: 31px;
+}
+
+/*
+	Chosen Error class
+*/
+/* line 122, ../sass-components/helpers.scss */
+.has-error
+.chosen-container
+.chosen-default,
+.has-error .tag-editor.ng-isolate-scope.ng-valid {
+  border: 1px solid #990000;
+}
+
+/* line 131, ../sass-components/helpers.scss */
+.has-error
+.chosen-container:focus {
+  outline-color: #990000;
+}
+
+/* line 136, ../sass-components/helpers.scss */
+.label {
+  font-weight: 300;
+}
+
+/* line 140, ../sass-components/helpers.scss */
+.actionButtons {
+  width: 87px;
+}
+
+/* line 145, ../sass-components/helpers.scss */
+.private-networks .col-xs-2,
+.private-networks .col-xs-3,
+.private-networks .col-xs-4 {
+  padding-left: 0;
+  padding-right: 10px;
+}
+/* line 150, ../sass-components/helpers.scss */
+.private-networks .col-xs-2.env,
+.private-networks .col-xs-3.env,
+.private-networks .col-xs-4.env {
+  padding-right: 0;
+}
+
+/* line 157, ../sass-components/helpers.scss */
+.rangePort .col-xs-5 {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 161, ../sass-components/helpers.scss */
+.rangePort .col-xs-2 {
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 29px;
+  text-align: center;
+}
+
+/* line 169, ../sass-components/helpers.scss */
+.ico-user {
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  width: 41px;
+  height: 41px;
+  color: #666;
+  border: 4px solid #ccc;
+}
+/* line 178, ../sass-components/helpers.scss */
+.ico-user span {
+  font-size: 34px;
+  text-align: center;
+}
+
+/* line 185, ../sass-components/helpers.scss */
+.media-body .checkbox {
+  margin-top: 0;
+}
+/* line 187, ../sass-components/helpers.scss */
+.media-body .checkbox input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+/* line 193, ../sass-components/helpers.scss */
+.thumbnail {
+  background: none;
+  border: none;
+}
+
+/* line 198, ../sass-components/helpers.scss */
+.rounded {
+  border-radius: 50%;
+  border: 4px solid #ccc;
+}
+
+/* line 204, ../sass-components/helpers.scss */
+fieldset:disabled {
+  color: #ccc;
+}
+
+/* line 209, ../sass-components/helpers.scss */
+.btn-link:focus, .btn-link:hover, .btn-link:active {
+  outline: none;
+}
+
+/* line 212, ../sass-components/helpers.scss */
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  opacity: 0.30;
+}
+
+/**
+ * Autocomplete loading
+ */
+/* line 219, ../sass-components/helpers.scss */
+.ui-autocomplete-loading {
+  background: white url("../images/ui-anim_basic_16x16.gif") 99% center no-repeat;
+}
+
+/**
+ * Tag Colors
+ */
+/* line 227, ../sass-components/helpers.scss */
+.tag-editor .color-copper,
+table > tbody > tr > td .color-copper {
+  background: #c27d2a;
+}
+/* line 228, ../sass-components/helpers.scss */
+.tag-editor .color-bluegray,
+table > tbody > tr > td .color-bluegray {
+  background: #80a1b6;
+}
+/* line 229, ../sass-components/helpers.scss */
+.tag-editor .color-red,
+table > tbody > tr > td .color-red {
+  background: red;
+}
+/* line 230, ../sass-components/helpers.scss */
+.tag-editor .color-green,
+table > tbody > tr > td .color-green {
+  background: green;
+}
+/* line 231, ../sass-components/helpers.scss */
+.tag-editor .color-blue,
+table > tbody > tr > td .color-blue {
+  background: blue;
+}
+/* line 232, ../sass-components/helpers.scss */
+.tag-editor .color-yellow,
+table > tbody > tr > td .color-yellow {
+  background: yellow;
+  color: black;
+}
+/* line 233, ../sass-components/helpers.scss */
+.tag-editor .color-orange,
+table > tbody > tr > td .color-orange {
+  background: orange;
+}
+/* line 234, ../sass-components/helpers.scss */
+.tag-editor .color-purple,
+table > tbody > tr > td .color-purple {
+  background: purple;
+}
+/* line 235, ../sass-components/helpers.scss */
+.tag-editor .color-gray,
+table > tbody > tr > td .color-gray {
+  background: gray;
+}
+/* line 236, ../sass-components/helpers.scss */
+.tag-editor .color-lightgreen,
+table > tbody > tr > td .color-lightgreen {
+  background: lightgreen;
+  color: black;
+}
+/* line 237, ../sass-components/helpers.scss */
+.tag-editor .color-cyan,
+table > tbody > tr > td .color-cyan {
+  background: cyan;
+  color: black;
+}
+/* line 238, ../sass-components/helpers.scss */
+.tag-editor .color-lightgray,
+table > tbody > tr > td .color-lightgray {
+  background: lightgray;
+}
+/* line 239, ../sass-components/helpers.scss */
+.tag-editor .color-lime,
+table > tbody > tr > td .color-lime {
+  background: lime;
+  color: black;
+}
+/* line 240, ../sass-components/helpers.scss */
+.tag-editor .color-black,
+table > tbody > tr > td .color-black {
+  background: black;
+}
+/* line 241, ../sass-components/helpers.scss */
+.tag-editor .color-gold,
+table > tbody > tr > td .color-gold {
+  background: gold;
+  color: black;
+}
+/* line 242, ../sass-components/helpers.scss */
+.tag-editor .color-brown,
+table > tbody > tr > td .color-brown {
+  background: brown;
+}
+
+/**
+ * Widths
+ */
+/* line 247, ../sass-components/helpers.scss */
+.pct100 {
+  width: 100%;
+}
+
+/* line 250, ../sass-components/helpers.scss */
+.pct85 {
+  width: 85%;
+}
+
+/* line 253, ../sass-components/helpers.scss */
+.pct15 {
+  width: 15%;
+}
+
+/* line 1, ../sass-components/login.scss */
+.login {
+  width: 300px;
+  z-index: 100;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: 0px 3px 10px 1px #ccc;
+}
+/* line 8, ../sass-components/login.scss */
+.login h1 {
+  text-align: center;
+  margin: 0;
+}

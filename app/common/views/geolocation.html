@@ -1,0 +1,21 @@
+<div class="panel">
+  <h1>Digite o HOST:</h1>
+  <input class="" type="text" ng-model="hostname" name="hostname"/>
+  <input class="btn btn-primary btn-sm" value="buscar" type="button" ng-model="filter" name="filter" ng-click="getLocation()"/>
+  <ul>
+    <li>{{geolocationInfo.as}}</li>
+    <li>{{geolocationInfo.city}}</li>
+    <li>{{geolocationInfo.country}}</li>
+    <li>{{geolocationInfo.countryCode}}</li>
+    <li>{{geolocationInfo.isp}}</li>
+    <li>{{geolocationInfo.lat}}</li>
+    <li>{{geolocationInfo.lon}}</li>
+    <li>{{geolocationInfo.org}}</li>
+    <li>{{geolocationInfo.query}}</li>
+    <li>{{geolocationInfo.region}}</li>
+    <li>{{geolocationInfo.regionName}}</li>
+    <li>{{geolocationInfo.status}}</li>
+    <li>{{geolocationInfo.timezone}}</li>
+    <li>{{geolocationInfo.zip}}</li>
+  </ul>
+</div>

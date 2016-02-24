@@ -1,0 +1,24 @@
+{
+  "name": "Geolocation",
+  "description": "Raduzera",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "lcavalcante"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "angular-route": "~1.4.8"
+  }
+}
