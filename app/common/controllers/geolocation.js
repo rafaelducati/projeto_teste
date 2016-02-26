@@ -6,7 +6,7 @@ geoModule.controller("geolocation", ["$scope", "$rootScope", "GeoService", "$loc
   $scope.getLocation = function () {  
     GeoService.get( { host: $scope.hostname }, 
       function ( response ) {      
-        $scope.message = 'Fandangosssssss!';
+        $scope.message = 'Test app!';
         $scope.geolocationInfo = response; 
 
         console.log( $scope.geolocationInfo );

@@ -1,7 +1,7 @@
 {
   "name": "geolocation",
   "version": "1.0.0",
-  "description": "Raduzera",
+  "description": "UI Challenge",
   "main": "Gruntfile.js",
   "dependencies": {
     "grunt": "^0.4.5",
@@ -15,6 +15,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "lcavalcante",
+  "author": "rafaelducati",
   "license": "ISC"
 }

@@ -6,8 +6,8 @@ describe("Toguro APP", function () {
   var filterButton = element(by.id('filters'));
 
   function login () {
-    browser.get("http://network.totvs.com/web/#/login");
-    username.sendKeys('lcavalcante');
+    browser.get("http://rafaelducati.com/uichallenge/web/#/login");
+    username.sendKeys('rafaelducati');
     password.sendKeys('1234');
     loginButton.click();
     envButton.click();
@@ -19,6 +19,6 @@ describe("Toguro APP", function () {
   });
 
   it("Título obrigatório", function () {
-    expect(browser.getTitle()).toEqual("Portal Networking");
+    expect(browser.getTitle()).toEqual("Rafael Ducati");
   });
 });

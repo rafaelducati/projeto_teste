@@ -3,7 +3,7 @@ angular.module("toguro", [ "ngRoute", "ngResource", "toguro.geolocation"]);
 var toguroModule = angular.module("toguro");
 
 toguroModule.config(["$routeProvider", function ( $routeProvider ) {
-		$routeProvider.when('/geolocation', { templateUrl: "app/common/views/geolocation.html", controller: 'geolocation' }).otherwise("/");
+		$routeProvider.when('/geolocation', { templateUrl: "app/common/views/geolocation.html", controller: 'geolocation' }).otherwise("/geolocation");
 	} 		
 ]);;var geoModule = angular.module("toguro.geolocation", ["geolocationServices"]);
 
@@ -13,7 +13,7 @@ geoModule.controller("geolocation", ["$scope", "$rootScope", "GeoService", "$loc
   $scope.getLocation = function () {  
     GeoService.get( { host: $scope.hostname }, 
       function ( response ) {      
-        $scope.message = 'Fandangosssssss!';
+        $scope.message = 'Test app!';
         $scope.geolocationInfo = response; 
 
         console.log( $scope.geolocationInfo );

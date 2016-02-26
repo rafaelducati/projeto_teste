@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt" ng-app="toguro">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Page Title -->
-    <title>Geolocation</title>
-    <!-- Angular Dependencies -->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-  </head>
-  <!-- Body -->
-  <body>
-    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-    <!-- View -->
-    <ng-view></ng-view>
-    <!-- App -->
-    <script type="text/javascript" src="build/geolocation.concat.js"></script>    
-  </body>
-  <!--/Body-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Page Title -->
+  <title>Geolocation</title>
+  <!-- Angular Dependencies -->
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+</head>
+<!-- Body -->
+<body>
+
+  <!-- View -->
+  <ng-view></ng-view>
+  <!-- App -->
+  <script type="text/javascript" src="build/geolocation.concat.js"></script>   
+  
+</body>
+<!--/Body-->
 </html>

@@ -1,7 +1,18 @@
 <div class="panel">
-  <h1>Digite o HOST:</h1>
+
+<div class="collapse navbar-collapse">
+<h1>Locate host:</h1>
+<form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input class="form-control" type="text" ng-model="hostname" name="hostname" placeholder="Search host" />
+  </div>
+   <input class="btn btn-default" value="Locate" type="button" ng-model="filter" name="filter" ng-click="getLocation()"/>
+</form>
+</div>
+
+<!--   <h1>Test:</h1>
   <input class="" type="text" ng-model="hostname" name="hostname"/>
-  <input class="btn btn-primary btn-sm" value="buscar" type="button" ng-model="filter" name="filter" ng-click="getLocation()"/>
+  <input class="btn btn-primary btn-sm" value="buscar" type="button" ng-model="filter" name="filter" ng-click="getLocation()"/> -->
   <ul>
     <li>{{geolocationInfo.as}}</li>
     <li>{{geolocationInfo.city}}</li>
@@ -18,4 +29,5 @@
     <li>{{geolocationInfo.timezone}}</li>
     <li>{{geolocationInfo.zip}}</li>
   </ul>
+
 </div>

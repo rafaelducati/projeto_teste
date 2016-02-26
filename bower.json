@@ -1,10 +1,10 @@
 {
   "name": "Geolocation",
-  "description": "Raduzera",
+  "description": "UI Challenge",
   "main": "",
   "moduleType": [],
   "authors": [
-    "lcavalcante"
+    "rafaelducati"
   ],
   "license": "MIT",
   "homepage": "index.html",
